@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1627.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bmgts.controller.LoanPaymentAndDetailsController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/bmgts/style/loanpaymentanddetails.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="363.0" layoutY="53.0" prefHeight="51.0" prefWidth="901.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="213.0" layoutY="5.0" prefHeight="42.0" prefWidth="476.0" text="Loan Payment &amp; Loan Details" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtLoanPaymentID" editable="false" labelFloat="true" layoutX="89.0" layoutY="532.0" prefHeight="42.0" prefWidth="275.0" promptText="Loan Payment ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPayTotal" focusColor="#d51313" labelFloat="true" layoutX="1305.0" layoutY="532.0" prefHeight="42.0" prefWidth="275.0" promptText="Total" unFocusColor="#d51313">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPayPersonID" labelFloat="true" layoutX="1007.0" layoutY="532.0" prefHeight="42.0" prefWidth="275.0" promptText="Pay person NIC">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPaymentAmount" labelFloat="true" layoutX="405.0" layoutY="532.0" prefHeight="42.0" prefWidth="275.0" promptText="Payment Amount">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanPayDate" labelFloat="true" layoutX="705.0" layoutY="532.0" prefHeight="42.0" prefWidth="275.0" promptText="Pay Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbLoanNumber" layoutX="89.0" layoutY="237.0" prefHeight="38.0" prefWidth="222.0" promptText="Loan Number" />
+      <Pane layoutX="96.0" layoutY="151.0" prefHeight="24.0" prefWidth="530.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="209.0" prefHeight="25.0" prefWidth="112.0" text="Loan Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="96.0" layoutY="446.0" prefHeight="24.0" prefWidth="530.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="175.0" prefHeight="25.0" prefWidth="180.0" text="Loan Payment Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="1295.0" layoutY="689.0" onMouseClicked="#makePayment" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: blue; -fx-background-radius: 22;" text="MAKE PAYMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1295.0" layoutY="789.0" onMouseClicked="#clearAll" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="69.0" layoutY="633.0" prefHeight="298.0" prefWidth="1136.0">
+        <columns>
+          <TableColumn prefWidth="228.0000762939453" text="Payment ID" />
+          <TableColumn prefWidth="340.79998779296875" text="Payment Amount" />
+            <TableColumn prefWidth="240.0" text="Pay Date" />
+            <TableColumn prefWidth="332.00006103515625" text="Pay person NIC" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtLoanDuration" labelFloat="true" layoutX="601.0" layoutY="237.0" prefHeight="26.0" prefWidth="221.0" promptText="Duration" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanIterestCharge" editable="false" labelFloat="true" layoutX="863.0" layoutY="237.0" prefHeight="26.0" prefWidth="221.0" promptText="Interest Charge" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanAmount" editable="false" labelFloat="true" layoutX="1105.0" layoutY="237.0" prefHeight="26.0" prefWidth="221.0" promptText="Loan Amount" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMonthlyPayment" editable="false" labelFloat="true" layoutX="89.0" layoutY="322.0" prefHeight="26.0" prefWidth="221.0" promptText="Monthly Payment" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanDate" editable="false" labelFloat="true" layoutX="349.0" layoutY="323.0" prefHeight="26.0" prefWidth="221.0" promptText="Open Date" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPayDate" labelFloat="true" layoutX="601.0" layoutY="323.0" prefHeight="26.0" prefWidth="221.0" promptText="Monthly Pay Date" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanType" editable="false" labelFloat="true" layoutX="349.0" layoutY="237.0" prefHeight="26.0" prefWidth="221.0" promptText="Loan Type ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanTotal" editable="false" labelFloat="true" layoutX="863.0" layoutY="323.0" prefHeight="26.0" prefWidth="221.0" promptText="Total" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCusID" editable="false" labelFloat="true" layoutX="1358.0" layoutY="237.0" prefHeight="26.0" prefWidth="221.0" promptText="Customer ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterID" editable="false" labelFloat="true" layoutX="1358.0" layoutY="322.0" prefHeight="26.0" prefWidth="221.0" promptText="Second Garenter ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterID" editable="false" labelFloat="true" layoutX="1105.0" layoutY="323.0" prefHeight="26.0" prefWidth="221.0" promptText="First Garenter ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="608.0" layoutY="367.0" prefHeight="24.0" prefWidth="211.0" text="If you want, You can change Pay Date" textFill="#e81515">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

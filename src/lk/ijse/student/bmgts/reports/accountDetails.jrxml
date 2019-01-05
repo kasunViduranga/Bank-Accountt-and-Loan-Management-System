@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T22:43:31 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="accountDetails" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="471a7fa8-8c43-4cf8-a2ff-bb898453161c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bank_management_system"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select *from account]]>
+	</queryString>
+	<field name="accNum" class="java.lang.String"/>
+	<field name="openDate" class="java.lang.String"/>
+	<field name="openTime" class="java.lang.String"/>
+	<field name="total" class="java.lang.Double"/>
+	<field name="accTypeID" class="java.lang.String"/>
+	<field name="nic" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="245" y="10" width="313" height="30" forecolor="#ED2724" uuid="32634110-1840-468d-a574-a0bc0dff42a2"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Account Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="137" height="30" forecolor="#3925E8" uuid="2d95335f-fe3d-4354-bc02-85e3a4337ba3"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Account Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="0" width="133" height="30" forecolor="#3925E8" uuid="d6841182-db14-4936-a985-5a5d55c8c334"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[open Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="0" width="133" height="30" forecolor="#3925E8" uuid="c5a3c4c4-12ce-44f7-b4d9-3a061f72c7fe"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[open Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="0" width="133" height="30" forecolor="#3925E8" uuid="c8be025f-2486-4440-9204-4c557c9f04ae"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="536" y="0" width="133" height="30" forecolor="#3925E8" uuid="050dfd09-2428-4a34-a90c-d60d3e2692b4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[account Type ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="669" y="0" width="133" height="30" forecolor="#3925E8" uuid="5347ea07-2ab6-4c1d-9ace-bfd6938d88b9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC Number]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="68" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="21" width="137" height="30" uuid="dafcd854-6863-4335-b9fc-c0c575653c72"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="21" width="133" height="30" uuid="81b4c3f3-1061-4f91-9c4e-85141d63931d"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{openDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="21" width="133" height="30" uuid="4cf6f403-8c29-412e-a504-473d5471ba53"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{openTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="21" width="133" height="30" uuid="bdb331d2-f616-4b40-aa5c-a3d545fb527b"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="536" y="21" width="133" height="30" uuid="4c4385d9-18a6-4915-8e2c-6db9e2707c81"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accTypeID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="669" y="21" width="133" height="30" uuid="2c97ab64-7a47-48a6-a036-f4112028f463"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

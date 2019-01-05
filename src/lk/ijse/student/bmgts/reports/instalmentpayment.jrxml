@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-29T00:45:13 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="instalmentpayment" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="129c3e67-b60d-4eb2-9e66-293ec1efe24a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bank_management_system"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select *from instalmentpayment]]>
+	</queryString>
+	<field name="loanPayID" class="java.lang.String"/>
+	<field name="loanNum" class="java.lang.String"/>
+	<field name="payDate" class="java.lang.String"/>
+	<field name="payPersNIC" class="java.lang.String"/>
+	<field name="payAmount" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="271" y="0" width="261" height="48" forecolor="#F71511" uuid="03ab2df3-8c76-479d-9dbf-08b313066547"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loan Payment Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="162" height="30" forecolor="#3A1CE6" uuid="387b9a9d-cff1-4e94-aba7-f86aedf0f4ac"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[loan Pay ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="0" width="160" height="30" forecolor="#3A1CE6" uuid="dbc62b42-343c-4904-97da-e9cd8e4d00ce"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[loan Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="0" width="160" height="30" forecolor="#3A1CE6" uuid="8c0c3287-52b8-400e-a466-76216f630c03"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pay Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="0" width="160" height="30" forecolor="#3A1CE6" uuid="63971d4e-8f56-48bb-98b1-00265069eb46"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pay Person NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="642" y="0" width="160" height="30" forecolor="#3A1CE6" uuid="4ac2c848-bb67-4907-a063-cbe20323e4e5"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pay Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="13" width="162" height="30" uuid="7c2af469-2e84-4b9b-ab9d-6a71782bb403"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loanPayID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="13" width="160" height="30" uuid="a85e3c87-a066-442e-a559-e578d84b274d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loanNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="322" y="13" width="160" height="30" uuid="c8ca1839-821e-4d8a-b61e-917abf15a1ed"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{payDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="482" y="13" width="160" height="30" uuid="a9cca736-ac5f-4ed0-bfcd-0bd5e2e837a5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{payPersNIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="13" width="160" height="30" uuid="ba9be327-9081-43c0-a6a5-4fd416a2b67d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{payAmount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1627.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bmgts.controller.LoanAndAccSettingController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/bmgts/style/loanandaccsetting.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="386.0" layoutY="23.0" prefHeight="51.0" prefWidth="798.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="215.0" layoutY="5.0" prefHeight="42.0" prefWidth="369.0" text="Loan &amp; Account Setting" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="831.0" layoutY="150.0" prefHeight="24.0" prefWidth="730.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="303.0" prefHeight="17.0" prefWidth="125.0" text="Account Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtLoanID" labelFloat="true" layoutX="122.0" layoutY="213.0" prefHeight="26.0" prefWidth="218.0" promptText="Loan ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanType" labelFloat="true" layoutX="122.0" layoutY="288.0" prefHeight="26.0" prefWidth="218.0" promptText="Loan Type" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtInterestCharge" labelFloat="true" layoutX="122.0" layoutY="360.0" prefHeight="26.0" prefWidth="218.0" promptText="Interest Charge" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="122.0" layoutY="427.0" prefHeight="26.0" prefWidth="218.0" promptText="Lona Duration Month:" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMaxAmount" labelFloat="true" layoutX="122.0" layoutY="502.0" prefHeight="26.0" prefWidth="218.0" promptText="Maximum Amount" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="348.0" layoutY="619.0" onMouseClicked="#updateLoanType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #dbdb11; -fx-background-radius: 22;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton cache="true" layoutX="51.0" layoutY="619.0" onMouseClicked="#saveLoanType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: green; -fx-background-radius: 22;" text="SAVE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.5534351509035998">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton layoutX="203.0" layoutY="619.0" onMouseClicked="#searchLoanType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: blue; -fx-background-radius: 22;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="493.0" layoutY="619.0" onMouseClicked="#deleteLoanType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="776.0" layoutY="174.0" orientation="VERTICAL" prefHeight="760.0" prefWidth="18.0" />
+      <JFXTextField fx:id="txtAccID" labelFloat="true" layoutX="898.0" layoutY="213.0" prefHeight="26.0" prefWidth="218.0" promptText="Account ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAccType" labelFloat="true" layoutX="897.0" layoutY="296.0" prefHeight="26.0" prefWidth="218.0" promptText="Account Type" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtInterest" labelFloat="true" layoutX="897.0" layoutY="372.0" prefHeight="26.0" prefWidth="218.0" promptText="Interest" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="loanDetailsTable" layoutX="37.0" layoutY="679.0" prefHeight="242.0" prefWidth="690.0">
+         <columns>
+            <TableColumn prefWidth="101.60003280639648" text="Loan ID" />
+            <TableColumn prefWidth="115.20004272460938" text="Loan Type" />
+            <TableColumn prefWidth="105.5999755859375" text="Duration Month:" />
+            <TableColumn prefWidth="104.7999267578125" text="Interest Charge" />
+            <TableColumn minWidth="0.0" prefWidth="112.800048828125" text="Amount" />
+            <TableColumn prefWidth="149.60001220703123" text="Minimum Month Salary" />
+         </columns>
+      </TableView>
+      <TableView fx:id="accDetailsTable" layoutX="855.0" layoutY="679.0" prefHeight="242.0" prefWidth="716.0">
+         <columns>
+            <TableColumn prefWidth="80.80010986328125" text="AccType ID" />
+            <TableColumn prefWidth="162.4000244140625" text="Account Type" />
+            <TableColumn prefWidth="108.0" text="Interest" />
+            <TableColumn prefWidth="215.2000732421875" text="Min Amount of 1st Deposite" />
+            <TableColumn prefWidth="148.0001220703125" text="Count Of Owners" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="1160.0" layoutY="619.0" onMouseClicked="#updateAccountType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #dbdb11; -fx-background-radius: 22;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="863.0" layoutY="619.0" onMouseClicked="#saveAccountType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: green; -fx-background-radius: 22;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1015.0" layoutY="619.0" onMouseClicked="#searchAccountType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: blue; -fx-background-radius: 22;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1305.0" layoutY="619.0" onMouseClicked="#deleteAccountType" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtMinAmouOf1stDep" labelFloat="true" layoutX="897.0" layoutY="461.0" prefHeight="26.0" prefWidth="218.0" promptText="Min Amount of 1st Deposite" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutX="22.0" layoutY="150.0" prefHeight="24.0" prefWidth="730.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="303.0" prefHeight="17.0" prefWidth="125.0" text="Loan Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtMinMonthSalary" labelFloat="true" layoutX="427.0" layoutY="212.0" prefHeight="38.0" prefWidth="218.0" promptText="Min Month Salary">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="1204.0" layoutY="219.0" text="Count Of Owners">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCountOfOwners" layoutX="1349.0" layoutY="219.0" prefHeight="26.0" prefWidth="141.0" />
+      <JFXButton layoutX="629.0" layoutY="619.0" onMouseClicked="#clearLoanDetails" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #2fc1b8; -fx-background-radius: 22;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1434.0" layoutY="619.0" onMouseClicked="#clearAccountDetais" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #2fc1b8; -fx-background-radius: 22;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

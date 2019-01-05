@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-29T00:35:04 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TransactionReport" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c21c1525-6ca0-4bc2-bb7e-bed37bd7df09">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bank_management_system"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select *from transaction]]>
+	</queryString>
+	<field name="tranId" class="java.lang.String"/>
+	<field name="tranType" class="java.lang.String"/>
+	<field name="accNum" class="java.lang.String"/>
+	<field name="tranFee" class="java.math.BigDecimal"/>
+	<field name="tranDate" class="java.lang.String"/>
+	<field name="tranTime" class="java.lang.String"/>
+	<field name="tranPersNIC" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="259" y="0" width="237" height="48" forecolor="#F71511" uuid="bbef3ed5-a549-4ace-877b-7531ce4328b6"/>
+				<textElement textAlignment="Center">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Transaction Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="110" height="30" forecolor="#2926EB" uuid="6fd58fd8-6237-4d37-b40e-7506066fb855"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran: Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="107" height="30" forecolor="#2926EB" uuid="a8867b6c-84e9-49c2-be7f-b6c9a86d6f8e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran: Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="0" width="107" height="30" forecolor="#2926EB" uuid="4ed37e3e-b934-499a-a0c8-ef8ce714d570"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[account Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="0" width="107" height="30" forecolor="#2926EB" uuid="fd72e769-5e18-4e43-89a7-55f74efc7768"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran: Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="0" width="107" height="30" forecolor="#2926EB" uuid="ba44c312-9085-4de8-8a3b-2efa10240b78"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran: Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="538" y="0" width="107" height="30" forecolor="#2926EB" uuid="b2cef192-09e3-49ef-aafd-7f41b201f981"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran: Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="645" y="0" width="125" height="30" forecolor="#2926EB" uuid="fa44e527-4286-421c-9f87-c0320251bf4e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tran: Person NIC]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="-1" y="11" width="110" height="30" uuid="bc195624-2cf7-4d34-b8f0-bdaba3274440"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="109" y="11" width="107" height="30" uuid="cc960abe-a335-4b6b-bd61-90a3a9a16c67"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="11" width="107" height="30" uuid="4b12767e-d9d5-4d61-b6fe-9a5574503607"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="11" width="107" height="30" uuid="d641f3da-6f66-471d-ba9a-57d7991117dd"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranFee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="11" width="107" height="30" uuid="2ad2e7aa-7ce1-4ae9-8f26-65100b60afb0"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="537" y="11" width="107" height="30" uuid="aa01004d-03a8-4b7d-9044-632bd022efa4"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="644" y="11" width="125" height="30" uuid="28008f09-4ada-4e4e-8665-6af3e3f96403"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tranPersNIC}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

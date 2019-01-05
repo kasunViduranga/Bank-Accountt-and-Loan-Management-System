@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1627.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bmgts.controller.OpenAccountController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/bmgts/style/openaccount.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="414.0" layoutY="24.0" prefHeight="51.0" prefWidth="798.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="312.0" layoutY="5.0" prefHeight="42.0" prefWidth="242.0" text="Open Account" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txt1stOwnerFirstName" labelFloat="true" layoutX="457.0" layoutY="379.0" prefHeight="26.0" prefWidth="226.0" promptText="First Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stOwnerLastName" labelFloat="true" layoutX="457.0" layoutY="445.0" prefHeight="26.0" prefWidth="226.0" promptText="Last Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stOwnerAddress" labelFloat="true" layoutX="457.0" layoutY="515.0" prefHeight="26.0" prefWidth="226.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stOwnerDOB" labelFloat="true" layoutX="457.0" layoutY="585.0" prefHeight="26.0" prefWidth="226.0" promptText="Date of Birth">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stOwnerNIC" labelFloat="true" layoutX="456.0" layoutY="648.0" prefHeight="26.0" prefWidth="226.0" promptText="NIC Number">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stOwnerTell" labelFloat="true" layoutX="457.0" layoutY="718.0" prefHeight="38.0" prefWidth="226.0" promptText="Tell">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="457.0" layoutY="784.0" prefHeight="38.0" prefWidth="69.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="btn1stOwnerMale" layoutX="527.0" layoutY="794.0" text="Male" textFill="#0900ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="btn1stOwnerFemale" layoutX="607.0" layoutY="794.0" text="Female" textFill="#0900ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <Pane layoutX="435.0" layoutY="152.0" prefHeight="24.0" prefWidth="343.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="100.0" prefHeight="25.0" prefWidth="144.0" text="1st Owner Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="152.0" prefHeight="24.0" prefWidth="326.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="101.0" prefHeight="17.0" prefWidth="125.0" text="Account Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtAccNumber" editable="false" labelFloat="true" layoutX="115.0" layoutY="418.0" prefHeight="38.0" prefWidth="226.0" promptText="Account Number">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbAccTypeID" focusColor="#3a5ec9" labelFloat="true" layoutX="115.0" layoutY="216.0" prefHeight="38.0" prefWidth="226.0" promptText="Accont Type ID" unFocusColor="BLACK" />
+      <Label layoutX="114.0" layoutY="353.0" prefHeight="38.0" prefWidth="70.0" text="Interest">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRate" editable="false" layoutX="204.0" layoutY="357.0" prefHeight="25.0" prefWidth="135.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="131.0" layoutY="799.0" onMouseClicked="#createAccount" prefHeight="38.0" prefWidth="193.0" style="-fx-background-color: green; -fx-background-radius: 22;" text="CREATE ACCOUNT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="131.0" layoutY="869.0" onMouseClicked="#isClearAll" prefHeight="38.0" prefWidth="193.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtOpenTime" editable="false" labelFloat="true" layoutX="115.0" layoutY="555.0" prefHeight="38.0" prefWidth="226.0" promptText="Open Time">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOpenDate" editable="false" labelFloat="true" layoutX="115.0" layoutY="484.0" prefHeight="38.0" prefWidth="226.0" promptText="Open Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerFirstName" labelFloat="true" layoutX="835.0" layoutY="379.0" prefHeight="26.0" prefWidth="226.0" promptText="First Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerLastName" labelFloat="true" layoutX="835.0" layoutY="445.0" prefHeight="26.0" prefWidth="226.0" promptText="Last Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerAddress" labelFloat="true" layoutX="835.0" layoutY="515.0" prefHeight="26.0" prefWidth="226.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerDOB" labelFloat="true" layoutX="835.0" layoutY="585.0" prefHeight="26.0" prefWidth="226.0" promptText="Date of Birth">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerNIC" labelFloat="true" layoutX="835.0" layoutY="648.0" prefHeight="26.0" prefWidth="226.0" promptText="NIC Number">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerTell" labelFloat="true" layoutX="835.0" layoutY="718.0" prefHeight="38.0" prefWidth="226.0" promptText="Tell">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lbl2ndOwnerGender" layoutX="835.0" layoutY="784.0" prefHeight="38.0" prefWidth="69.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="btn2ndOwnerMale" layoutX="905.0" layoutY="794.0" text="Male" textFill="#0900ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="btn2ndOwnerFemale" layoutX="985.0" layoutY="794.0" text="Female" textFill="#0900ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <Pane layoutX="813.0" layoutY="152.0" prefHeight="24.0" prefWidth="343.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="100.0" prefHeight="25.0" prefWidth="144.0" text="2nd Owner Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txt3rdOwnerFirstName" labelFloat="true" layoutX="1236.0" layoutY="379.0" prefHeight="26.0" prefWidth="226.0" promptText="First Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt3rdOwnerLastName" labelFloat="true" layoutX="1236.0" layoutY="445.0" prefHeight="26.0" prefWidth="226.0" promptText="Last Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt3rdOwnerAddress" labelFloat="true" layoutX="1236.0" layoutY="515.0" prefHeight="26.0" prefWidth="226.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt3rdOwnerDOB" labelFloat="true" layoutX="1236.0" layoutY="585.0" prefHeight="26.0" prefWidth="226.0" promptText="Date of Birth">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt3rdOwnerNIC" labelFloat="true" layoutX="1236.0" layoutY="648.0" prefHeight="26.0" prefWidth="226.0" promptText="NIC Number">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt3rdOwnerTell" labelFloat="true" layoutX="1236.0" layoutY="718.0" prefHeight="38.0" prefWidth="226.0" promptText="Tell">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lbl3rdOwnerGender" layoutX="1236.0" layoutY="784.0" prefHeight="38.0" prefWidth="69.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="btn3rdOwnerMale" layoutX="1306.0" layoutY="794.0" text="Male" textFill="#0900ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="btn3rdOwnerFemale" layoutX="1386.0" layoutY="794.0" text="Female" textFill="#0900ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <Pane layoutX="1214.0" layoutY="152.0" prefHeight="24.0" prefWidth="343.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="100.0" prefHeight="25.0" prefWidth="144.0" text="3rd Owner Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtAccounType" editable="false" labelFloat="true" layoutX="115.0" layoutY="282.0" prefHeight="38.0" prefWidth="226.0" promptText="Account Type">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stOwnerID" editable="false" labelFloat="true" layoutX="456.0" layoutY="315.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndOwnerID" labelFloat="true" layoutX="835.0" layoutY="315.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt3rdOwnerID" labelFloat="true" layoutX="1236.0" layoutY="315.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <RadioButton fx:id="rbtn1stNewCustomer" layoutX="448.0" layoutY="218.0" mnemonicParsing="false" text="New Customer" textFill="#2113e2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtn2ndNewCustomer" layoutX="835.0" layoutY="218.0" mnemonicParsing="false" text="New Customer" textFill="#2113e2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtn3rdNewCustomer" layoutX="1233.0" layoutY="215.0" mnemonicParsing="false" text="New Customer" textFill="#2113e2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <JFXComboBox fx:id="cmb1stOwnerID" layoutX="455.0" layoutY="263.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer ID" />
+      <JFXComboBox fx:id="cmb2ndOwnerID" layoutX="832.0" layoutY="263.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer ID" />
+      <JFXComboBox fx:id="cmb3rdOwnerID" layoutX="1233.0" layoutY="263.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer ID" />
+      <JFXTextField fx:id="txtAmount" labelFloat="true" layoutX="115.0" layoutY="627.0" prefHeight="38.0" prefWidth="226.0" promptText="Amount">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCusAccDeID" editable="false" labelFloat="true" layoutX="114.0" layoutY="693.0" prefHeight="38.0" prefWidth="234.0" promptText="Customer Accout Details ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T23:06:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GarenterDetails" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9856b720-17fb-4537-b6bb-2d065719c4b5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bank_management_system"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from garenter]]>
+	</queryString>
+	<field name="garenterID" class="java.lang.String"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="nic" class="java.lang.String"/>
+	<field name="dob" class="java.lang.String"/>
+	<field name="mobNum" class="java.lang.String"/>
+	<field name="homeTell" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="job" class="java.lang.String"/>
+	<field name="monthSalary" class="java.math.BigDecimal"/>
+	<field name="paysheetNum" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="304" y="10" width="194" height="41" forecolor="#F71F1B" uuid="80e1b0c1-d656-4e47-b92c-6c139d13b4bb"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Garenter Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="-15" y="0" width="76" height="30" forecolor="#2320E6" uuid="b19560e7-affa-4fd7-8d9b-35e872ea7629"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[garenter ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="0" width="66" height="30" forecolor="#2320E6" uuid="0845ca01-5eb8-4447-9ba4-0df020b4a881"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[first Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="0" width="66" height="30" forecolor="#2320E6" uuid="1026e1d8-fe9a-4186-94c0-1473dfc29d36"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="66" height="30" forecolor="#2320E6" uuid="e272aa99-667e-4fef-aa30-9ff6b3a36928"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="0" width="66" height="30" forecolor="#2320E6" uuid="854ac7cb-0e36-4535-801e-b1dd88cdac7d"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="0" width="66" height="30" forecolor="#2320E6" uuid="7f9d6ca8-f2b7-4110-95de-0e3a29c713be"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="0" width="66" height="30" forecolor="#2320E6" uuid="f9441a3c-fa51-496e-bc55-0a400b7f09e4"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[mob: Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="0" width="66" height="30" forecolor="#2320E6" uuid="21d07905-cb52-449d-b952-beb141dcaa9b"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[home Tell:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="544" y="0" width="66" height="30" forecolor="#2320E6" uuid="9e213d95-1eef-4edb-b35f-ec689cd5d20a"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="610" y="0" width="66" height="30" forecolor="#2320E6" uuid="256b657f-0d0c-45b0-a43e-69ab105c286d"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[job]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="0" width="66" height="30" forecolor="#2320E6" uuid="7a30426b-116b-4659-8c3b-f08e66f967f0"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[month Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="751" y="0" width="71" height="30" forecolor="#2320E6" uuid="921ec7a8-2bac-437e-82cd-5742c4bc02aa"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[paysheet Number]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="-15" y="14" width="76" height="30" uuid="8ca866f9-f7f8-458f-af93-4cfa9a1c1c58"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{garenterID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="14" width="66" height="30" uuid="0a1b1c47-dd8c-4457-9302-3d79699740c2"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="132" y="14" width="66" height="30" uuid="ee5b2a59-ba1d-43f9-98fb-2f570f0802d9"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="14" width="66" height="30" uuid="7bfb8346-b009-409d-a469-fa8b7468ff74"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="269" y="14" width="66" height="30" uuid="61366ab8-1808-4a96-91cf-ccdb9c77b313"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="14" width="66" height="30" uuid="7e15a5d1-6ba6-4bd5-af68-a9a2053421d3"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="14" width="66" height="30" uuid="c34a60f6-1eda-4881-8f1e-0781d4d6e87e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="14" width="66" height="30" uuid="55d252b1-9ddf-48e5-87b5-6b2144af53df"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{homeTell}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="544" y="14" width="66" height="30" uuid="abadd699-ba59-4127-86f3-8dbebc7c1546"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="610" y="14" width="66" height="30" uuid="329d0b8a-537a-421a-af8b-39539448b689"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{job}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="14" width="66" height="30" uuid="c9a009c4-66e6-4a37-ba95-76d928419c95"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{monthSalary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="751" y="14" width="71" height="30" uuid="2b0c04f4-c4a0-4d7f-a7aa-798198f2f04b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paysheetNum}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

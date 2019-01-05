@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1627.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bmgts.controller.CreateLoanController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/bmgts/style/createloan.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="335.0" layoutY="35.0" prefHeight="51.0" prefWidth="798.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="299.0" layoutY="2.0" prefHeight="42.0" prefWidth="202.0" text="Create Loan" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtFirstName" editable="false" labelFloat="true" layoutX="341.0" layoutY="193.0" prefHeight="26.0" prefWidth="221.0" promptText="First Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanNumber" editable="false" labelFloat="true" layoutX="1354.0" layoutY="330.0" prefHeight="26.0" prefWidth="221.0" promptText="Loan Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" editable="false" labelFloat="true" layoutX="855.0" layoutY="193.0" prefHeight="26.0" prefWidth="221.0" promptText="Customer Address" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTell" editable="false" labelFloat="true" layoutX="1349.0" layoutY="193.0" prefHeight="26.0" prefWidth="221.0" promptText="Customer Tell" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDOB" editable="false" labelFloat="true" layoutX="81.0" layoutY="266.0" prefHeight="26.0" prefWidth="221.0" promptText="Date Of Birth" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" editable="false" labelFloat="true" layoutX="1095.0" layoutY="193.0" prefHeight="26.0" prefWidth="221.0" promptText="NIC Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutX="86.0" layoutY="141.0" prefHeight="24.0" prefWidth="530.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="168.0" prefHeight="25.0" prefWidth="194.0" text="Customer &amp; Loan Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="895.0" layoutY="480.0" prefHeight="24.0" prefWidth="625.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="186.0" prefHeight="25.0" prefWidth="159.0" text="2nd Garenter Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtLoanDuration" labelFloat="true" layoutX="593.0" layoutY="330.0" prefHeight="26.0" prefWidth="221.0" promptText="Duration" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanIterestCharge" editable="false" labelFloat="true" layoutX="855.0" layoutY="330.0" prefHeight="26.0" prefWidth="221.0" promptText="Interest Charge" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanAmount" labelFloat="true" layoutX="1097.0" layoutY="330.0" prefHeight="26.0" prefWidth="221.0" promptText="Loan Amount" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMonthlyPayment" editable="false" labelFloat="true" layoutX="81.0" layoutY="394.0" prefHeight="26.0" prefWidth="221.0" promptText="Monthly Payment" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbLoanTypeID" layoutX="81.0" layoutY="341.0" prefHeight="26.0" prefWidth="222.0" promptText="Loan Type ID" />
+      <JFXButton fx:id="btnCreateLoan" layoutX="1144.0" layoutY="905.0" onMouseClicked="#isCreateLoan" prefHeight="38.0" prefWidth="193.0" style="-fx-background-color: green; -fx-background-radius: 22;" text="CREATE LOAN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1377.0" layoutY="905.0" onMouseClicked="#isClearAll" prefHeight="38.0" prefWidth="193.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtLastName" editable="false" labelFloat="true" layoutX="599.0" layoutY="193.0" prefHeight="26.0" prefWidth="221.0" promptText="Last Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutX="92.0" layoutY="480.0" prefHeight="24.0" prefWidth="638.0" style="-fx-background-color: #2fcec9; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="186.0" prefHeight="25.0" prefWidth="159.0" text="1st Garenter Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="1289.0" layoutY="413.0" onMouseClicked="#isCalculate" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: #c1981d; -fx-background-radius: 22;" text="CALCULATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txt1stGarenterFirstName" labelFloat="true" layoutX="118.0" layoutY="596.0" prefHeight="26.0" prefWidth="221.0" promptText="First Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterAddress" labelFloat="true" layoutX="119.0" layoutY="708.0" prefHeight="26.0" prefWidth="221.0" promptText="Address" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterHometell" labelFloat="true" layoutX="481.0" layoutY="596.0" prefHeight="26.0" prefWidth="221.0" promptText="Home Tell" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterDOB" labelFloat="true" layoutX="118.0" layoutY="826.0" prefHeight="26.0" prefWidth="221.0" promptText="Date of Birth" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterNIC" labelFloat="true" layoutX="119.0" layoutY="764.0" prefHeight="26.0" prefWidth="221.0" promptText="NIC Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="487.0" layoutY="655.0" prefHeight="38.0" prefWidth="77.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="cmb1stGarenterMale" layoutX="565.0" layoutY="666.0" text="Male" textFill="#2010d7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="cmb1stGarenterfemaie" layoutX="628.0" layoutY="666.0" text="Female" textFill="#2010d7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXTextField fx:id="txt1stGarenterLastName" labelFloat="true" layoutX="119.0" layoutY="655.0" prefHeight="26.0" prefWidth="221.0" promptText="Last Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterJob" labelFloat="true" layoutX="482.0" layoutY="708.0" prefHeight="26.0" prefWidth="221.0" promptText="Job" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarentermonthSalary" labelFloat="true" layoutX="481.0" layoutY="764.0" prefHeight="26.0" prefWidth="221.0" promptText="month Salary" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterPaysheetNember" labelFloat="true" layoutX="481.0" layoutY="826.0" prefHeight="26.0" prefWidth="221.0" promptText="Paysheet Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt1stGarenterMobileNumber" labelFloat="true" layoutX="481.0" layoutY="536.0" prefHeight="26.0" prefWidth="221.0" promptText="Mobile Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="795.0" layoutY="482.0" orientation="VERTICAL" prefHeight="394.0" prefWidth="18.0" />
+      <JFXTextField fx:id="txtLoanDate" editable="false" labelFloat="true" layoutX="341.0" layoutY="395.0" prefHeight="26.0" prefWidth="221.0" promptText="Open Date" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbCustomerID" layoutX="81.0" layoutY="199.0" prefHeight="26.0" prefWidth="222.0" promptText="Customer ID" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txt1stGarenterID" labelFloat="true" layoutX="119.0" layoutY="536.0" prefHeight="26.0" prefWidth="221.0" promptText="Garenter ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterFirstName" labelFloat="true" layoutX="887.0" layoutY="596.0" prefHeight="26.0" prefWidth="221.0" promptText="First Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterAddress" labelFloat="true" layoutX="887.0" layoutY="708.0" prefHeight="26.0" prefWidth="221.0" promptText="Address" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterHomeTell" labelFloat="true" layoutX="1249.0" layoutY="596.0" prefHeight="26.0" prefWidth="221.0" promptText="Home Tell" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterDOB" labelFloat="true" layoutX="887.0" layoutY="826.0" prefHeight="26.0" prefWidth="221.0" promptText="Date of Birth" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterNIC" labelFloat="true" layoutX="887.0" layoutY="764.0" prefHeight="26.0" prefWidth="221.0" promptText="NIC Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="1255.0" layoutY="655.0" prefHeight="38.0" prefWidth="77.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="cmb2ndGarenterMale" layoutX="1333.0" layoutY="666.0" text="Male" textFill="#2010d7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="cmb2ndGarenterfemale" layoutX="1396.0" layoutY="666.0" text="Female" textFill="#2010d7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXTextField fx:id="txt2ndGarenterLastName" labelFloat="true" layoutX="887.0" layoutY="655.0" prefHeight="26.0" prefWidth="221.0" promptText="Last Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterJob" labelFloat="true" layoutX="1250.0" layoutY="708.0" prefHeight="26.0" prefWidth="221.0" promptText="Job" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterMonthSalary" labelFloat="true" layoutX="1249.0" layoutY="764.0" prefHeight="26.0" prefWidth="221.0" promptText="month Salary" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterPaysheetNumber" labelFloat="true" layoutX="1249.0" layoutY="826.0" prefHeight="26.0" prefWidth="221.0" promptText="Paysheet Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterMobileNumber" labelFloat="true" layoutX="1249.0" layoutY="536.0" prefHeight="26.0" prefWidth="221.0" promptText="Mobile Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txt2ndGarenterID" labelFloat="true" layoutX="887.0" layoutY="536.0" prefHeight="26.0" prefWidth="221.0" promptText="Garenter ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPayDate" labelFloat="true" layoutX="593.0" layoutY="395.0" prefHeight="26.0" prefWidth="221.0" promptText="Monthly Pay Date" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanType" editable="false" labelFloat="true" layoutX="341.0" layoutY="330.0" prefHeight="26.0" prefWidth="221.0" promptText="Loan Type" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLoanTotal" editable="false" labelFloat="true" layoutX="855.0" layoutY="395.0" prefHeight="26.0" prefWidth="221.0" promptText="Total" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

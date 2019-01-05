@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T21:24:31 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AccTypeReports" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aceaadfd-20fe-4b7e-bf2f-e0228cd86f79">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bank_management_system"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from acctype]]>
+	</queryString>
+	<field name="accTypeID" class="java.lang.String"/>
+	<field name="accType" class="java.lang.String"/>
+	<field name="rate" class="java.math.BigDecimal"/>
+	<field name="minAmouOf1stDep" class="java.math.BigDecimal"/>
+	<field name="CountOfOwners" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement x="143" y="0" width="268" height="30" forecolor="#FA0C07" uuid="fff8d46b-7db7-43c2-ab5d-050ee53f8d5c"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Accoun Type Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="-9" y="-19" width="111" height="30" forecolor="#3A1AED" uuid="506687fe-ffe8-4fff-8958-0c9af035c367"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[accTypeID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="-19" width="111" height="30" forecolor="#3A1AED" uuid="d4887d44-3f4b-4f17-94c3-40d52911b3cf"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[accType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="-19" width="78" height="30" forecolor="#3A1AED" uuid="62fe328d-17ec-421b-9648-8e6da866a7eb"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="-19" width="148" height="30" forecolor="#3A1AED" uuid="20f481c2-4878-44b0-8a79-5f9060838538"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[min Amount Of 1st Deposte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="-19" width="111" height="30" forecolor="#3A1AED" uuid="63b2f245-70cf-4a6a-9f3e-16388d2a322d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CountOfOwners]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-19" width="111" height="30" uuid="a799ee43-2ac9-4a51-aea2-1a690c27081c"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accTypeID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="-19" width="111" height="30" uuid="9d4dd3b4-9613-47a7-b293-ff34146b1510"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="-19" width="78" height="30" uuid="cb20a8de-3d95-4cb6-9dd8-659b57041516"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="-19" width="144" height="30" uuid="e4548aa3-8e1d-43bd-a349-181b9cd5a80a"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{minAmouOf1stDep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="-19" width="111" height="30" uuid="0dc17a96-d31d-4832-bab5-f06aa02c94ff"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CountOfOwners}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

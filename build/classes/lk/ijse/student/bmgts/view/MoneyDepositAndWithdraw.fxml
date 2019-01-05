@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1627.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bmgts.controller.MoneyDepositAndWithdrawController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/bmgts/style/moneydepositandwithdraw.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="414.0" layoutY="31.0" prefHeight="51.0" prefWidth="798.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="179.0" layoutY="5.0" prefHeight="42.0" prefWidth="440.0" text="Money Deposit &amp; Withdraw" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="191.0" layoutY="245.0" text="Transaction Type :" textFill="#aa0f8b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rbtnDeposite" layoutX="379.0" layoutY="250.0" text="Deposit" textFill="#f01e1e">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnWithdraw" layoutX="475.0" layoutY="250.0" text="Withdraw" textFill="#f01e1e">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXComboBox fx:id="cmbAccNumber" layoutX="665.0" layoutY="350.0" prefHeight="26.0" prefWidth="198.0" visibleRowCount="5" />
+      <Label layoutX="514.0" layoutY="350.0" text="Account Number :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1057.0" layoutY="558.0" prefHeight="26.0" prefWidth="129.0" text="Total  Amount :" textFill="#dd0a0a">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotal" layoutX="1218.0" layoutY="553.0" unFocusColor="#cd1313">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDate" editable="false" labelFloat="true" layoutX="1222.0" layoutY="338.0" prefHeight="38.0" prefWidth="226.0" promptText="Date" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTime" editable="false" labelFloat="true" layoutX="196.0" layoutY="441.0" prefHeight="38.0" prefWidth="226.0" promptText="Time" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="927.0" layoutY="338.0" prefHeight="38.0" prefWidth="226.0" promptText="NIC Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAmount" labelFloat="true" layoutX="514.0" layoutY="441.0" prefHeight="38.0" prefWidth="226.0" promptText="Transaction Amount" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" cache="true" layoutX="878.0" layoutY="786.0" onMouseClicked="#saveTransaction" prefHeight="39.0" prefWidth="207.0" style="-fx-background-color: green; -fx-background-radius: 22;" text="SAVE TRANSACTION">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.5534351509035998">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="1203.0" layoutY="786.0" onMouseClicked="#clearLoanDetails" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtTRID" editable="false" labelFloat="true" layoutX="196.0" layoutY="338.0" prefHeight="38.0" prefWidth="226.0" promptText="transaction ID" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

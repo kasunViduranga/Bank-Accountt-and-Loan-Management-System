@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1627.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.bmgts.controller.CustomerManageController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/bmgts/style/customermanage.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="414.0" layoutY="45.0" prefHeight="51.0" prefWidth="798.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="250.0" layoutY="5.0" prefHeight="42.0" prefWidth="298.0" text="Manage Customer" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="147.0" layoutY="255.0" text="NIC Number :" textFill="#e82121">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableCustomer" layoutX="18.0" layoutY="676.0" prefHeight="262.0" prefWidth="1590.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Cus ID" />
+          <TableColumn prefWidth="295.19993591308594" text="First Name" />
+            <TableColumn prefWidth="296.00006103515625" text="Last Name" />
+            <TableColumn prefWidth="243.20001220703125" text="Address" />
+            <TableColumn prefWidth="115.2000732421875" text="Owner Type" />
+            <TableColumn prefWidth="159.199951171875" text="Date of Birth" />
+            <TableColumn prefWidth="177.60009765625" text="NIC Number" />
+            <TableColumn prefWidth="84.7999267578125" text="Gender" />
+            <TableColumn prefWidth="152.0001220703125" text="Tell Number" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNICSearch" layoutX="288.0" layoutY="255.0" prefHeight="31.0" prefWidth="234.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="549.0" layoutY="249.0" onMouseClicked="#searchCustomer" prefHeight="38.0" prefWidth="103.0" style="-fx-background-color: blue; -fx-background-radius: 12;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtFirstName" labelFloat="true" layoutX="282.0" layoutY="377.0" prefHeight="26.0" prefWidth="285.0" promptText="First Name">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLastName" labelFloat="true" layoutX="282.0" layoutY="480.0" prefHeight="26.0" prefWidth="285.0" promptText="Last Name">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="280.0" layoutY="581.0" prefHeight="26.0" prefWidth="285.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOwnerType" editable="false" labelFloat="true" layoutX="722.0" layoutY="377.0" prefHeight="26.0" prefWidth="285.0" promptText="Owner Type">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" editable="false" labelFloat="true" layoutX="722.0" layoutY="480.0" prefHeight="26.0" prefWidth="285.0" promptText="NIC Number">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTell" labelFloat="true" layoutX="722.0" layoutY="581.0" prefHeight="26.0" prefWidth="285.0" promptText="Tell Number">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="1266.0" layoutY="543.0" onMouseClicked="#clearText" prefHeight="44.0" prefWidth="134.0" style="-fx-background-radius: 22; -fx-background-color: red;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1267.0" layoutY="436.0" onMouseClicked="#customerIsUpdete" prefHeight="44.0" prefWidth="133.0" style="-fx-background-radius: 22; -fx-background-color: green;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
